@@ -1,0 +1,7 @@
+resources:
+  - name: my_image
+    type: image
+    pointer:
+      sourceName: trriplejay/simpleserver
+    seed:
+      latest
