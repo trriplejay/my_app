@@ -1,9 +1,11 @@
 language: node_js
-node_js
+
+node_js:
   - 0.12
+  
 build:
 
-  pre_ci: 
+  pre_ci:
     - echo "pre ci section"
     
   ci:
