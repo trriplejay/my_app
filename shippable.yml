@@ -1,0 +1,14 @@
+language: node_js
+node_js
+  - 0.12
+build:
+
+  pre_ci: 
+    - echo "pre ci section"
+    
+  ci:
+    - echo "ci section"
+    
+  push: 
+    - echo "push section"
+    
