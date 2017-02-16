@@ -10,7 +10,7 @@ build:
     
   ci:
   
-    - echo "versionName=$BRANCH.$BUILD_NUMBER" >> $MY_APP_RUNCI_STATE/my_image.env
+    - echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/my_image.env
     
   push: 
     - echo "push section"
