@@ -4,4 +4,4 @@ resources:
     pointer:
       sourceName: trriplejay/simpleserver
     seed:
-      latest
+      versionName: latest
