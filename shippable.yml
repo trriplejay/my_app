@@ -9,8 +9,8 @@ build:
     - echo "buidl and push image" 
 
 integrations:
-  notification:
-    - name: "trigger_my_image"
+  notifications:
+    - integrationName: "trigger_my_image"
       type: webhook
       payload:
         - versionName: $BRANCH.$BUILD_NUMBER
