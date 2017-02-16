@@ -2,16 +2,16 @@ language: node_js
 
 node_js:
   - 0.12
-  
+
 build:
 
-  pre_ci:
-    - echo "pre ci section"
-    
   ci:
-  
-    - echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/my_image.env
-    
-  push: 
-    - echo "push section"
-    
+    - echo "buidl and push image" 
+
+integrations:
+  notification:
+    - name: "trigger_my_image"
+      type: webhook
+      payload:
+        - versionName: $BRANCH.$BUILD_NUMBER
+      
