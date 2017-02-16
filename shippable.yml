@@ -8,10 +8,10 @@ build:
   ci:
     - echo "buidl and push image" 
 
-integrations:
-  notifications:
-    - integrationName: "trigger_my_image"
-      type: webhook
-      payload:
-        - versionName=$BRANCH.$BUILD_NUMBER
+#integrations:
+#  notifications:
+#    - integrationName: "trigger_my_image"
+#      type: webhook
+#      payload:
+#        - versionName=$BRANCH.$BUILD_NUMBER
       
