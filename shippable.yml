@@ -7,7 +7,7 @@ build:
 
   ci:
     - echo "build and push image" 
-    - echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/my_image.env
+    - 'if [ ! $IS_PULL_REQUEST ] ; then echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/my_image.env; fi'
 
 #integrations:
 #  notifications:
