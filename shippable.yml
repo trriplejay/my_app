@@ -13,5 +13,5 @@ integrations:
     - integrationName: "trigger_my_image"
       type: webhook
       payload:
-        - versionName="$BRANCH.$BUILD_NUMBER"
+        - versionName=$BRANCH.$BUILD_NUMBER
       
