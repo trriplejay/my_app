@@ -6,7 +6,8 @@ node_js:
 build:
 
   ci:
-    - echo "buidl and push image" 
+    - echo "build and push image" 
+    - echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/my_image.env
 
 #integrations:
 #  notifications:
